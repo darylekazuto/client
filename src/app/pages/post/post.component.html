@@ -1,0 +1,8 @@
+<mat-grid-list cols="2" rowHeight="2:1">
+  @for (item of posts; track $index){
+  <mat-grid-tile>
+    <mat-grid-tile-header>{{ item.title }}</mat-grid-tile-header>
+    {{ item.content }}
+  </mat-grid-tile>
+  }
+</mat-grid-list>
